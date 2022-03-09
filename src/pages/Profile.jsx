@@ -95,16 +95,19 @@ const Profile = () => {
       toast.success("Successfully deleted listing");
     }
   };
-  const onEdit = (listingId)=> {
-   navigate (`/edit-listing/${listingId}`)
-  }
-
+  const onEdit = (listingId) => {
+    navigate(`/edit-listing/${listingId}`);
+  };
 
   return (
     <div className="m-10 text-black">
       <header className="flex justify-between items-center">
         <p className="text-4xl font-bold">My Profile</p>
-        <button onClick={onLogout} type="button" className="cursor-pointer bg-red-500 px-3 py-1 rounded-2xl mr-5 font-bold hover:bg-red-700">
+        <button
+          onClick={onLogout}
+          type="button"
+          className="cursor-pointer bg-red-500 px-3 py-1 rounded-2xl mr-5 font-bold hover:bg-red-700"
+        >
           Log Out
         </button>
       </header>
@@ -133,7 +136,7 @@ const Profile = () => {
             />
             <input
               onChange={onChange}
-              disabled={!changeDetails} 
+              disabled={!changeDetails}
               className="text-black px-5 overflow-hidden"
               type="text"
               id="email"
@@ -141,7 +144,10 @@ const Profile = () => {
             />
           </form>
         </div>
-        <Link to="/create-listing" className="p-2 rounded-3xl bg-slate-200 max-w-lg flex justify-between items-center">
+        <Link
+          to="/create-listing"
+          className="p-2 rounded-3xl bg-slate-200 max-w-lg flex justify-between items-center"
+        >
           <img src={homeIcon} alt="home" />
           <p className="text-black">Sell or rent your home</p>
           <img src={arrowRight} alt="arrow right" />
