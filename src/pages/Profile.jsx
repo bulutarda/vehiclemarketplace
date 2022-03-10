@@ -15,7 +15,6 @@ import {
 } from "firebase/firestore";
 import { toast } from "react-toastify";
 import arrowRight from "../assets/svg/keyboardArrowRightIcon.svg";
-import homeIcon from "../assets/svg/homeIcon.svg";
 import ListingItem from "../components/ListingItem";
 
 const Profile = () => {
@@ -148,7 +147,7 @@ const Profile = () => {
           to="/create-listing"
           className="p-2 rounded-3xl bg-slate-200 max-w-lg flex justify-between items-center"
         >
-          <img src={homeIcon} alt="home" />
+          
           <p className="text-black">Sell or rent your home</p>
           <img src={arrowRight} alt="arrow right" />
         </Link>

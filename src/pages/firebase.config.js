@@ -6,7 +6,7 @@ import {getFirestore} from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "{process.env.REACT_APP_GEOCODE_API_KEY}",
+  apiKey: "AIzaSyDnb3WlwIPY5wD4qPy49KZH1gd8Cwqw8Oc",
   authDomain: "vehicle-marketplace-app.firebaseapp.com",
   projectId: "vehicle-marketplace-app",
   storageBucket: "vehicle-marketplace-app.appspot.com",
